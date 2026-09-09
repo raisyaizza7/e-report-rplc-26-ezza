@@ -3,3 +3,22 @@
 body {
     font-family: "Poppins", sans-serif;
 }
+
+.hero .col img {
+   width: 100%;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+@media screen and (max-width:510px){
+    .hero .col img {
+        width: 100px
+    }
+}
+
+.about .col img {
+    width: 50%;
+}

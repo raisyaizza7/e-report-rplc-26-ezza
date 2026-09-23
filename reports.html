@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | E-Report IDN</title>
+    <link rel="shortcut icon" href="./assets/image/idnlogo.png" type="image/x-icon">
+
+    <!-- css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- My css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+  <body>
+
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <img src="assets/image/idnlogo.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
+            <span class="fw-bold text-primary">IDN E-Report</span>
+        </a>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html#service">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html#recent">Recents</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- All Reports -->
+  <section id="all-reports" class="pt-5 pb-3">
+        <div class="container">
+         <!-- Header -->
+         <div class="d-flex justify-content-md-between justify-content-center align-items-center flex-wrap mb-4">
+            <div class="text-center text-md-start">
+                <h1 class="fw-bold text-primary-emphasis" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Semua Laporan</h1>
+                <p class="lh-lg text-muted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                  Lihat semua laporan yang telah dikirim, filter berdasarkan kategori atau cari laporan tertentu
+                </p>
+            </div>
+            <div>
+              <!-- Perbaikan: Ditambah # pada data-bs-target -->
+              <button class="btn btn-primary shadow-sm" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <i class="fa-solid fa-plus me-1"></i> Tambah Laporan
+              </button>
+            </div>
+         </div>
+
+         <!-- Filter & Search -->
+         <div class="row g-2 align-items-center">
+              <div class="col-md-4">
+                 <input type="text" class="form-control shadow-sm" placeholder="Cari Laporan...">
+              </div>
+              <div class="col-md-3">
+                 <select class="form-select shadow-sm">
+                   <option selected>Filter kategori</option>
+                   <option value="fasilitas">Fasilitas</option>
+                   <option value="2">Non Akademik</option>
+                 </select>
+              </div>
+              <div class="col-md-3">
+                 <select class="form-select shadow-sm">
+                     <option selected>Urutkan</option>
+                     <option value="newest">Terbaru</option>
+                     <option value="oldest">Terlama</option>
+                     <option value="popular">Terpopuler</option>
+                   </select>
+              </div>
+              <div class="col-md-2">
+                 <button class="btn btn-primary w-100 shadow-sm">
+                  <i class="fa-solid fa-filter me-1"></i> Filter
+                 </button>
+              </div>
+         </div>
+        </div>
+  </section>
+ 
+  <!-- Recents / Blog Section -->
+  <section id="recents" class="pb-5 pt-2" data-aos="fade-up" data-aos-duration="1000">
+      <div class="container">
+        <!-- Grid Cards -->
+        <div class="row g-4" data-aos="fade-up" data-aos-duration="1000">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                  <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                  <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                  <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                  <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+              <div class="position-relative">
+                <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+                <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                  <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                  <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+                </div>
+                <div>
+                  <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Modal Tambah Laporan Baru -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow rounded-3">
+        
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary text-white">
+          <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="exampleModalLabel">
+            <i class="fa-solid fa-pen-to-square"></i>
+            Tambah Laporan Baru
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Form -->
+        <form action="">
+          <div class="modal-body p-4">
+            
+            <!-- Judul Laporan -->
+            <div class="mb-3 text-start">
+              <label for="judulLaporan" class="form-label fw-bold">Judul Laporan</label>
+              <input type="text" class="form-control" id="judulLaporan" placeholder="Masukkan judul laporan...">
+            </div>
+
+            <!-- Kategori -->
+            <div class="mb-3 text-start">
+              <label for="kategoriLaporan" class="form-label fw-bold">Kategori</label>
+              <select class="form-select" id="kategoriLaporan">
+                <option selected disabled>Pilih Kategori</option>
+                <option value="fasilitas">Fasilitas</option>
+                <option value="non-akademik">Non Akademik</option>
+              </select>
+            </div>
+
+            <!-- Deskripsi Laporan -->
+            <div class="mb-3 text-start">
+              <label for="deskripsiLaporan" class="form-label fw-bold">Deskripsi Laporan</label>
+              <textarea class="form-control" id="deskripsiLaporan" rows="4" placeholder="Tulis laporan Anda..."></textarea>
+            </div>
+
+            <!-- Upload Gambar -->
+            <div class="mb-3 text-start">
+              <label for="uploadGambar" class="form-label fw-bold">Upload Gambar (opsional)</label>
+              <input class="form-control" type="file" id="uploadGambar">
+            </div>
+
+          </div>
+
+          <!-- Modal Footer -->
+          <div class="modal-footer border-0 pt-0 pe-4 pb-4">
+            <button type="button" class="btn btn-light px-4" data-bs-dismiss="modal">Batal</button>
+            <button type="submit" class="btn btn-primary px-4 d-flex align-items-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              Kirim Laporan
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <nav aria-label="Page navigation example" class="pb-5">
+      <ul class="pagination justify-content-center">
+         <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+         <li class="page-item"><a class="page-link active" href="#">1</a></li>
+         <li class="page-item"><a class="page-link" href="#">2</a></li>
+         <li class="page-item"><a class="page-link" href="#">3</a></li>
+         <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="bg-primary">
+      <div class="container">
+          <div class="row justify-content-between row-gap-4 py-5">
+
+              <div class="col text-white">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                      <img src="assets/image/idnlogo.png" alt="Logo" width="30px" class="d-inline-block align-text-top rounded">
+                      <h2 class="fw-bold m-0">E-reports</h2>
+                  </div>
+                  <p class="lh-lg opacity-75 m-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus!</p>
+              </div>
+
+              <div class="col d-flex flex-column gap-2 text-center">
+                  <h4 class="fw-bold text-white">Menu</h4>
+                  <a href="index.html#hero" class="footer-link text-white text-decoration-none">home</a>
+                  <a href="index.html#about" class="footer-link text-white text-decoration-none">about</a>
+                  <a href="index.html#service" class="footer-link text-white text-decoration-none">services</a>
+                  <a href="index.html#recent" class="footer-link text-white text-decoration-none">recent</a>
+                  <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+              </div>
+
+              <div class="col d-flex flex-column gap-2 text-white">
+                  <h4 class="fw-bold ">Contact Us</h4>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <i class="fas fa-envelope"></i>
+                      raisyaizza@idn.sch.id
+                  </p><br>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <a href="https://wa.me/621222078544" target="_blank" class="text-white text-decoration-none">
+                          <i class="fab fa-whatsapp"></i>
+                          WhatsApp 
+                      </a>
+                  </p> <br>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Jln. Pertamina B , RoyalOak   
+                  </p>
+              </div>
+          </div>
+
+          <div class="copyright text-center text-white pb-4">
+              <p>&copy; Copyright by <span class="fw-bold">RPL-C class</span>2026, All Rights Reserved</p>
+          </div>
+      </div>
+  </footer>
+
+    <!-- js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>

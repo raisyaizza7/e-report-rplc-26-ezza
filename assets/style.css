@@ -22,3 +22,19 @@ section {
 .about .col img {
     width: 50%;
 }
+
+/* Style Khusus Service Section */
+.service-card {
+    background-color: #0d6efd; /* Warna biru khas Bootstrap */
+    box-shadow: 0 10px 20px rgba(13, 110, 253, 0.2); /* Efek bayangan halus */
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .hero .col:nth-child(1) {
+    --animate-delay: 0.5s;
+  }

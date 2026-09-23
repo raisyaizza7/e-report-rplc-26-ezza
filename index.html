@@ -13,11 +13,20 @@
 <!-- My css -->
 <link rel="stylesheet" href="./assets/style.css">
 
+<!-- cdn font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+<!-- animate css -->
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<!-- aos css -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   </head>
   <body>
    <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4
+   animate__animated animate__fadeInDown">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-2" href="#">
             <img src="assets/image/idnlogo.png" alt="Logo" width="30"
@@ -30,19 +39,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto gap-4 pt-4 pt-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Home</a>
+            <a class="nav-link text-primary" href="index.html#hero">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#about">About</a>
+            <a class="nav-link text-primary" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="#">Services</a>
+            <a class="nav-link text-primary" href="#Service">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" aria-disabled="true">Recents</a>
+            <a class="nav-link text-primary" href="#recents">Recents</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" aria-disabled="true">FAQ</a>
+            <a class="nav-link text-primary" href="#faq">FAQ</a>
           </li>
         </ul>
       </div>
@@ -52,17 +61,17 @@
   <!-- Hero Section -->
   <section id="hero" class="py-5">
     <div class="container">
-      <div class="hero row align-items-center gap-5 gap-lg-0 flex-column flex-lg-row text-center text-lg-start py-5">
-        <div class="col-12 col-lg-6">
+      <div class="hero row align-items-center gap-5 gap-lg-0 flex-column flex-lg-row text-center text-lg-start py-5 overflow-hidden">
+        <div class="col-12 col-lg-6 animate__animated animate__fadeInLeft animate__delay-1s">
           <h1 class="fw-bold">Selamat Datang <br>di <span class="text-primary"> Aplikasi IDN E-Report 2026 </span> Forum Pengaduan</h1>
           <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum id impedit obcaecati ducimus quisquam! Optio saepe suscipit repellat voluptas tenetur dolores officiis aliquid? Facilis incidunt sint tenetur necessitatibus quo excepturi xijuari fantipoi.</p>
           <div class="mt-4">
-            <a href="#about" class="btn btn-primary">About Us</a>
-            <a href="#start" class="btn btn-outline-primary ms-2">Let's Start</a>
+            <a href="#" class="btn btn-primary">About Us</a>
+            <a href="reports.html" class="btn btn-outline-primary ms-2">Let's Start</a>
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end">
+        <div class="col-12 col-lg-6 d-flex justify-content-center justify-content-lg-end animate__animated animate__fadeInRight animate__delay-2s">
           <img src="./assets/image/formilus.png" alt="Illustration" class="img-fluid">
         </div>
 
@@ -75,16 +84,306 @@
     <div class="container">
       <div class="about row justify-content-center">
         <div class="col-12 col-lg-10 text-center">
-          <h1 class="fw-bold mb-4 text-primary">Tentang Kami</h1>
-          <p class="lh-lg mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <h1 class="fw-bold mb-4 text-primary" data-aos="fade-up" data-aos-duration="1000">Tentang Kami</h1>
+          <p class="lh-lg mb-5" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit.
              Beatae suscipit et nam alias. Nulla sint, veritatis ipsum qui laborum laudantium eos voluptas corporis officiis
              , a necessitatibus, expedita in quis! Nihil animi libero velit praesentium voluptatem, at veritatis quis aperiam a quisquam excepturi in, 
              temporibus expedita aliquam dolorem exercitationem eius? Eveniet?</p>
-             <img src="assets/image/about.png" alt="About Image" class="img-fluid w-75">
+             <img src="assets/image/about.png" alt="About Image" class="img-fluid w-75" data-aos="fade-up" data-aos-duration="1000">
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Service Section  -->
+  <!-- Service Section  -->
+  <section id="Service" class="py-5 text-primary">
+    <div class="container">
+      <div class="mb-4">
+        <h2 class="fw-bold fs-1" data-aos="fade-up" data-aos-duration="1000">Services</h2>
+        <p class="text-secondary" data-aos="fade-up" data-aos-duration="1000">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="row g-4" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Card 1: Pengaduan Akademik -->
+        <div class="col-6 col-md-4">
+          <div class="service-card p-4 rounded-4 text-white">
+            <i class="fa-solid fa-graduation-cap fs-5 mb-3"></i>
+            <h5 class="fw-bold mb-3">Pengaduan Akademik</h5>
+            <p class="small opacity-75 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Pengaduan Fasilitas -->
+        <div class="col-6 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="service-card p-4 rounded-4 text-white">
+            <i class="fa-solid fa-wrench fs-5 mb-3"></i>
+            <h5 class="fw-bold mb-3">Pengaduan Fasilitas</h5>
+            <p class="small opacity-75 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Pengaduan Anonymous -->
+        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+          <div class="service-card p-4 rounded-4 text-white">
+            <i class="fa-solid fa-user-secret fs-5 mb-3"></i>
+            <h5 class="fw-bold mb-3">Pengaduan Anonymous</h5>
+            <p class="small opacity-75 m-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, excepturi!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recents / Blog Section -->
+  <section id="recents" class="py-5" data-aos="fade-up" data-aos-duration="1000">
+    <div class="container">
+      <!-- Header Section (Rata Kanan Sesuai Gambar) -->
+      <div class="text-end mb-5">
+        <h2 class="fw-bold fs-1 text-primary">Pengaduan</h2>
+        <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <!-- Grid Cards -->
+      <div class="row g-4" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+              <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+              <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden">
+            <div class="position-relative">
+              <img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Post Image" style="height: 200px;">
+              <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 fw-normal px-3 py-2">Category Name</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column justify-content-between">
+              <div>
+                <h5 class="card-title fw-bold text-dark mb-2">Dummy Post Title</h5>
+                <p class="card-text text-muted small mb-3">By: <span class="text-primary">John Doe</span> 2 hours ago</p>
+                <p class="card-text text-secondary mb-4">This is a short excerpt of the dummy post. It gives readers a preview of the content.</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary px-4 py-2 rounded-2">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5">
+      <div class="container">
+          <h1 class="text-center mb-4 fw-bold text-primary ">F A Q</h1>
+          <div class="accordion pt-4" id="faqAccordion">
+
+              <div class="row row-cols-md-2 row-cols-1 g-4">
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faqone" aria-expanded="true" aria-controls="faqone">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faqone" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faqtwo" aria-expanded="true" aria-controls="faqtwo">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faqtwo" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faq3" aria-expanded="true" aria-controls="faq3">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faq3" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faqo4" aria-expanded="true" aria-controls="faqo4">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faqo4" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faq5" aria-expanded="true" aria-controls="faq5">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faq5" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-6">
+                      <div class="accordion-item">
+                          <h3 class="accordion-header" id="headingOne">
+                              <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
+                                  data-bs-target="#faq6" aria-expanded="true" aria-controls="faq6">
+                                  What is your return policy?
+                              </button>
+                          </h3>
+                          <div id="faq6" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                              data-bs-parent="#faqAccordion">
+                              <div class="accordion-body">
+                                  <strong>Our return policy allows you to return items within 30 days of purchase for
+                                      a full refund.</strong>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-primary">
+      <div class="container">
+          <div class="row justify-content-between row-gap-4 py-5">
+
+              <div class="col text-white">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                      <img src="assets/image/idnlogo.png" alt="Logo" width="30px"
+                          class="d-inline-block align-text-top rounded">
+                      <h2 class="fw-bold m-0">E-reports</h2>
+                  </div>
+                  <p class="lh-lg opacity-75 m-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia,
+                      repellendus!</p>
+              </div>
+
+              <div class="col d-flex flex-column gap-2 text-center">
+                  <h4 class="fw-bold text-white">Menu</h4>
+                  <a href="#hero" class="footer-link text-white text-decoration-none">home</a>
+                  <a href="#about" class="footer-link text-white text-decoration-none">about</a>
+                  <a href="#Service" class="footer-link text-white text-decoration-none">services</a>
+                  <a href="#recents" class="footer-link text-white text-decoration-none">recent</a>
+                  <a href="#faq" class="footer-link text-white text-decoration-none">FAQ</a>
+              </div>
+
+              <div class="col d-flex flex-column gap-2 text-white">
+                  <h4 class="fw-bold ">Contact Us</h4>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <i class="fas fa-envelope"></i>
+                      raisyaizza@idn.sch.id
+                  </p><br>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <a href="https://wa.me/621222078544" target="_blank" class="text-white text-decoration-none">
+                          <i class="fab fa-whatsapp"></i>
+                          WhatsApp 
+                      </a>
+                  </p> <br>
+                  <p class="m-0 d-flex align-items-center gap-2">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Jln. Pertamina B , RoyalOak   
+
+                  </p>
+              </div>
+          </div>
+
+          <div class="copyright text-center text-white pb-4">
+              <p>&copy; Copyright by <span class="fw-bold">RPL-C class</span>2026, All Rights Reserved</p>
+
+          </div>
+      </div>
+
+
+  </footer>
+
+
+
+<!-- aos jss -->
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
     <!-- js Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>

@@ -1,13 +1,16 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | E-Report IDN</title>
+    <title>Semua Laporan | E-Report IDN</title>
     <link rel="shortcut icon" href="./assets/image/idnlogo.png" type="image/x-icon">
 
     <!-- css Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- My css -->
     <link rel="stylesheet" href="./assets/style.css">
@@ -15,12 +18,12 @@
     <!-- cdn font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
 
    <!-- Navbar -->
-   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle py-4" data-aos="fade-down" data-aos-duration="800">
     <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
             <img src="assets/image/idnlogo.png" alt="Logo" width="30" class="d-inline-block align-text-top rounded">
             <span class="fw-bold text-primary">IDN E-Report</span>
         </a>
@@ -36,47 +39,46 @@
             <a class="nav-link text-primary" href="index.html#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="index.html#service">Services</a>
+            <a class="nav-link text-primary" href="index.html#Service">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="index.html#recent">Recents</a>
+            <a class="nav-link text-primary" href="index.html#recents">Recents</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="index.html#faq">FAQ</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-primary" href="panduan.html">Guide</a>
-        </li>
+            <a class="nav-link text-primary fw-bold" href="reports.html">Reports</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-
   <!-- MAIN CONTENT SECTION (SEMUA LAPORAN) -->
   <main class="container my-5 flex-grow-1">
     <!-- Judul dan Subjudul Section -->
-    <div class="text-center mb-4">
-        <h2 class="fw-bold mb-1" style="color: #0f172a;">Semua Laporan</h2>
-        <p class="text-muted" style="font-size: 0.95rem;">Lihat semua laporan yang telah dikirim, filter berdasarkan kategori atau cari laporan tertentu.</p>
+    <div class="text-center mb-4" data-aos="fade-up" data-aos-duration="800">
+        <h2 class="fw-bold mb-1 text-primary">Semua Laporan Pengaduan</h2>
+        <p class="text-muted" style="font-size: 0.95rem;">Lihat daftar laporan yang telah dikirimkan oleh civitas akademika IDN, gunakan filter atau pencarian untuk menemukan laporan spesifik.</p>
     </div>
 
     <!-- Bagian Filter & Pencarian -->
-    <div class="row g-2 mb-4 justify-content-center align-items-center">
+    <div class="row g-2 mb-4 justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
         <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Cari laporan...">
+            <input type="text" class="form-control" placeholder="Cari laporan atau kendala...">
         </div>
         <div class="col-md-3">
             <select class="form-select text-muted">
                 <option selected>Filter Kategori</option>
                 <option value="1">Akademik</option>
                 <option value="2">Fasilitas</option>
-                <option value="3">Lainnya</option>
+                <option value="3">Anonymous / Rahasia</option>
             </select>
         </div>
         <div class="col-md-3">
             <select class="form-select text-muted">
-                <option selected>Urutkan</option>
+                <option selected>Urutkan Berdasarkan</option>
                 <option value="terbaru">Terbaru</option>
                 <option value="terlama">Terlama</option>
             </select>
@@ -89,61 +91,73 @@
     <!-- Baris Grid Card (3 Kolom) -->
     <div class="row g-4">
         <!-- Card 1 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+            <div class="card h-100 shadow-sm border-0">
                 <div class="position-relative">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laporan" style="height: 200px; object-fit: cover;">
-                    <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 px-3 py-2">Akademik</span>
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Laporan" style="height: 200px;">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2">Fasilitas</span>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title fw-bold mb-2">Card title</h5>
-                    <p class="text-muted small mb-3">By: <a href="#" class="text-primary text-decoration-none">John Doe</a> 2 hours ago</p>
-                    <p class="card-text text-muted small mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="single-report.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold mb-2">Perbaikan AC Lab Komputer</h5>
+                        <p class="text-muted small mb-3">By: <span class="text-primary">Ahmad Fauzi</span> | Kemarin</p>
+                        <p class="card-text text-muted small mb-4">Pendingin ruangan di Lab Komputer lantai 2 tidak berfungsi maksimal dan mengganggu kenyamanan praktikum siswa.</p>
+                    </div>
+                    <div>
+                        <a href="single-report-lab.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Card 2 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+            <div class="card h-100 shadow-sm border-0">
                 <div class="position-relative">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laporan" style="height: 200px; object-fit: cover;">
-                    <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 px-3 py-2">Akademik</span>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Laporan" style="height: 200px;">
+                    <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 px-3 py-2">Akademik</span>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title fw-bold mb-2">Card title</h5>
-                    <p class="text-muted small mb-3">By: <a href="#" class="text-primary text-decoration-none">John Doe</a> 2 hours ago</p>
-                    <p class="card-text text-muted small mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="single-report.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold mb-2">Penjadwalan Ulang Ujian Praktik</h5>
+                        <p class="text-muted small mb-3">By: <span class="text-primary">Siti Aminah</span> | 3 hari lalu</p>
+                        <p class="card-text text-muted small mb-4">Permohonan peninjauan jadwal ujian susulan karena bentrok dengan agenda kompetisi eksternal sekolah.</p>
+                    </div>
+                    <div>
+                        <a href="single-report-ujian.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Card 3 -->
-        <div class="col-md-4">
-            <div class="card h-100 shadow-sm border">
+        <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+            <div class="card h-100 shadow-sm border-0">
                 <div class="position-relative">
-                    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Laporan" style="height: 200px; object-fit: cover;">
-                    <span class="badge bg-dark bg-opacity-75 position-absolute top-0 start-0 m-3 px-3 py-2">Akademik</span>
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=600&q=80" class="card-img-top object-fit-cover" alt="Laporan" style="height: 200px;">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-3 px-3 py-2">Anonymous</span>
                 </div>
-                <div class="card-body">
-                    <h5 class="card-title fw-bold mb-2">Card title</h5>
-                    <p class="text-muted small mb-3">By: <a href="#" class="text-primary text-decoration-none">John Doe</a> 2 hours ago</p>
-                    <p class="card-text text-muted small mb-4">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="single-report.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                <div class="card-body d-flex flex-column justify-content-between">
+                    <div>
+                        <h5 class="card-title fw-bold mb-2">Penambahan Tempat Sampah Asrama</h5>
+                        <p class="text-muted small mb-3">By: <span class="text-primary">Anonymous</span> | 5 hari lalu</p>
+                        <p class="card-text text-muted small mb-4">Usulan penambahan tempat sampah terpilah di area lorong asrama putra gedung C untuk menjaga kebersihan.</p>
+                    </div>
+                    <div>
+                        <a href="single-report-sampah.html" class="btn btn-primary btn-sm px-3">Selengkapnya...</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Pagination -->
-    <nav class="mt-5" aria-label="Page navigation">
+    <nav class="mt-5" aria-label="Page navigation" data-aos="fade-up" data-aos-duration="800">
         <ul class="pagination justify-content-center">
             <li class="page-item disabled">
                 <a class="page-link text-muted bg-light border" href="#" tabindex="-1">Previous</a>
             </li>
-            <li class="page-item active"><a class="page-link border" href="#">1</a></li>
+            <li class="page-item active"><a class="page-link border bg-primary text-white border-primary" href="#">1</a></li>
             <li class="page-item"><a class="page-link text-primary border" href="#">2</a></li>
             <li class="page-item"><a class="page-link text-primary border" href="#">3</a></li>
             <li class="page-item">
@@ -151,53 +165,52 @@
             </li>
         </ul>
     </nav>
-</main>
-
+  </main>
 
   <!-- Footer -->
-  <footer class="bg-primary">
+  <footer class="bg-primary text-white" data-aos="fade-in" data-aos-duration="1000">
       <div class="container">
           <div class="row justify-content-between row-gap-4 py-5">
 
-              <div class="col text-white">
-                  <div class="d-flex align-items-center gap-2 mb-2">
+              <div class="col-lg-4">
+                  <div class="d-flex align-items-center gap-2 mb-3">
                       <img src="assets/image/idnlogo.png" alt="Logo" width="30px" class="d-inline-block align-text-top rounded">
-                      <h2 class="fw-bold m-0">E-reports</h2>
+                      <h2 class="fw-bold m-0">E-Reports</h2>
                   </div>
-                  <p class="lh-lg opacity-75 m-0 text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, repellendus!</p>
+                  <p class="lh-lg opacity-75 m-0 text-white">Solusi cepat, transparan, dan terpercaya untuk menampung seluruh aspirasi dan pengaduan civitas akademika IDN.</p>
               </div>
 
-              <div class="col d-flex flex-column gap-2 text-center">
+              <div class="col-lg-3 d-flex flex-column gap-2">
                   <h4 class="fw-bold text-white">Menu</h4>
-                  <a href="index.html#hero" class="footer-link text-white text-decoration-none">home</a>
-                  <a href="index.html#about" class="footer-link text-white text-decoration-none">about</a>
-                  <a href="index.html#service" class="footer-link text-white text-decoration-none">services</a>
-                  <a href="index.html#recent" class="footer-link text-white text-decoration-none">recent</a>
-                  <a href="index.html#faq" class="footer-link text-white text-decoration-none">FAQ</a>
-                  <a href="panduan.html" class="footer-link text-white text-decoration-none">Guide</a>
+                  <a href="index.html#hero" class="footer-link text-white text-decoration-none opacity-75">Home</a>
+                  <a href="index.html#about" class="footer-link text-white text-decoration-none opacity-75">About</a>
+                  <a href="index.html#Service" class="footer-link text-white text-decoration-none opacity-75">Services</a>
+                  <a href="index.html#recents" class="footer-link text-white text-decoration-none opacity-75">Recent</a>
+                  <a href="index.html#faq" class="footer-link text-white text-decoration-none opacity-75">FAQ</a>
+                  <a href="reports.html" class="footer-link text-white text-decoration-none opacity-75">Reports</a>
               </div>
 
-              <div class="col d-flex flex-column gap-2 text-white">
-                  <h4 class="fw-bold ">Contact Us</h4>
-                  <p class="m-0 d-flex align-items-center gap-2">
+              <div class="col-lg-4 d-flex flex-column gap-2">
+                  <h4 class="fw-bold text-white">Contact Us</h4>
+                  <p class="m-0 d-flex align-items-center gap-2 opacity-75">
                       <i class="fas fa-envelope"></i>
                       raisyaizza@idn.sch.id
-                  </p><br>
-                  <p class="m-0 d-flex align-items-center gap-2">
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2 opacity-75">
                       <a href="https://wa.me/621222078544" target="_blank" class="text-white text-decoration-none">
-                          <i class="fab fa-whatsapp"></i>
-                          WhatsApp 
+                          <i class="fab fa-whatsapp"></i> WhatsApp: 0812-2207-8544
                       </a>
-                  </p> <br>
-                  <p class="m-0 d-flex align-items-center gap-2">
+                  </p>
+                  <p class="m-0 d-flex align-items-center gap-2 opacity-75">
                       <i class="fas fa-map-marker-alt"></i>
-                      Jln. Pertamina B , RoyalOak   
+                      Jln. Pertamina B, Royal Oak
                   </p>
               </div>
           </div>
 
-          <div class="copyright text-center text-white pb-4">
-              <p>&copy; Copyright by <span class="fw-bold">RPL-C class</span>2026, All Rights Reserved</p>
+          <hr class="border-light opacity-25 m-0">
+          <div class="copyright text-center text-white py-4 opacity-75">
+              <p class="m-0">&copy; Copyright by <span class="fw-bold">RPL-C Class</span> 2026, All Rights Reserved</p>
           </div>
       </div>
   </footer>
@@ -205,5 +218,13 @@
     <!-- js Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true, // Animasi hanya berjalan sekali saat di-scroll
+      });
+    </script>
   </body>
 </html>

@@ -63,6 +63,13 @@
         <p class="text-muted" style="font-size: 0.95rem;">Lihat daftar laporan yang telah dikirimkan oleh civitas akademika IDN, gunakan filter atau pencarian untuk menemukan laporan spesifik.</p>
     </div>
 
+    <!-- Tombol Tambah Report di Atas Filter -->
+    <div class="d-flex justify-content-end mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="50">
+        <button type="button" class="btn btn-primary d-flex align-items-center gap-2 px-3 py-2 shadow-sm" data-bs-toggle="modal" data-bs-target="#tambahLaporanModal">
+            <i class="fas fa-plus"></i> Tambah Report
+        </button>
+    </div>
+
     <!-- Bagian Filter & Pencarian -->
     <div class="row g-2 mb-4 justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
         <div class="col-md-4">
@@ -166,6 +173,61 @@
         </ul>
     </nav>
   </main>
+
+  <!-- MODAL TAMBAH LAPORAN BARU -->
+  <div class="modal fade" id="tambahLaporanModal" tabindex="-1" aria-labelledby="tambahLaporanModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow">
+        
+        <!-- Modal Header -->
+        <div class="modal-header bg-primary text-white py-3">
+          <h5 class="modal-title fw-bold d-flex align-items-center gap-2" id="tambahLaporanModalLabel">
+            <i class="fas fa-edit"></i> Tambah Laporan Baru
+          </h5>
+          <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <!-- Modal Body / Form -->
+        <div class="modal-body p-4">
+          <form>
+            <div class="mb-3">
+              <label for="judulLaporan" class="form-label fw-semibold text-dark">Judul Laporan</label>
+              <input type="text" class="form-control" id="judulLaporan" placeholder="Masukkan judul laporan...">
+            </div>
+
+            <div class="mb-3">
+              <label for="kategoriLaporan" class="form-label fw-semibold text-dark">Kategori</label>
+              <select class="form-select text-muted" id="kategoriLaporan">
+                <option selected>Pilih Kategori</option>
+                <option value="1">Akademik</option>
+                <option value="2">Fasilitas</option>
+                <option value="3">Anonymous / Rahasia</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="deskripsiLaporan" class="form-label fw-semibold text-dark">Deskripsi Laporan</label>
+              <textarea class="form-control" id="deskripsiLaporan" rows="4" placeholder="Tulis laporan Anda..."></textarea>
+            </div>
+
+            <div class="mb-3">
+              <label for="formFile" class="form-label fw-semibold text-dark">Upload Gambar (opsional)</label>
+              <input class="form-control" type="file" id="formFile">
+            </div>
+          </form>
+        </div>
+
+        <!-- Modal Footer -->
+        <div class="modal-footer border-top-0 px-4 pb-4">
+          <button type="button" class="btn btn-outline-secondary px-4" data-bs-dismiss="modal">Batal</button>
+          <button type="button" class="btn btn-primary d-flex align-items-center gap-2 px-4">
+            <i class="fas fa-paper-plane"></i> Kirim Laporan
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="bg-primary text-white" data-aos="fade-in" data-aos-duration="1000">
